@@ -1,0 +1,28 @@
+<div class="h-screen bg-base-200 mt-[-64px]">
+  <div class="flex items-center justify-center pt-20 px-4">
+    <div
+      class="bg-base-100 rounded-lg shadow-cl w-full max-w-6xl h-[calc(100vh-8rem)]"
+    >
+      <div class="flex h-full rounded-lg overflow-hidden">
+        <app-sidebar
+          (userSelected)="onUserSelected($event)"
+          (onlineUsersChanged)="onOnlineUsersChanged($event)"
+        ></app-sidebar>
+
+        <div
+          class="w-full flex justify-center items-center"
+          *ngIf="noChatSelected"
+        >
+          <app-no-chat-selected></app-no-chat-selected>
+        </div>
+        <div class="w-full" *ngIf="!noChatSelected">
+          <app-chat-container
+            (close)="onCloseChat()"
+            [user]="user"
+            [onlineUsers]="onlineUsers"
+          ></app-chat-container>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
