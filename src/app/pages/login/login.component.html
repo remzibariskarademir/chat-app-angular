@@ -5,7 +5,6 @@
       <p class="py-6">
         Özgürce konuşun ve istediğiniz gibi paylaşın. <br />
         (Verileriniz asla satılmayacak veya paylaşılmayacaktır.)
-        (Yersen)
       </p>
     </div>
     <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -66,7 +65,7 @@
                 <ng-container *ngIf="!showPassword">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5 "
+                    class="h-5 w-5"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -100,7 +99,14 @@
               </button>
             </label>
             <p class="validator-hint hidden">Lütfen şifre girin</p>
-            <button class="btn mt-2 btn-primary hover:text-white" type="submit">Login</button>
+            <div>
+              <a routerLink="/forgot-password" class="link link-hover"
+                >Şifremi Unuttum ?</a
+              >
+            </div>
+            <button class="btn btn-primary hover:text-white" type="submit">
+              Login
+            </button>
           </fieldset>
         </form>
       </div>

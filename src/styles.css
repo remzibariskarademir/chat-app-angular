@@ -2,3 +2,18 @@
 @plugin "daisyui" {
   themes: all;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  border-radius: 4px;
+}
+
+/* Firefox için */
+* {
+  scrollbar-color: var(--color-primary) transparent;
+  scrollbar-width: thin;
+}

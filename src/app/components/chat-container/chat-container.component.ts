@@ -201,7 +201,6 @@ export class ChatContainerComponent implements OnInit, AfterViewInit {
   }
 
   formatMessageTime(dateStr: string) {
-    // Kendi zaman formatlama fonksiyonunu buraya ekle
     return new Date(dateStr).toLocaleTimeString([], {
       hour: '2-digit',
       minute: '2-digit',

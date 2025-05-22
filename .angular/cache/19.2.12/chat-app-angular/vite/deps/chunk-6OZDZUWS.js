@@ -8,7 +8,7 @@ import {
   isPlatformServer,
   parseCookieValue,
   setRootDomAdapter
-} from "./chunk-2O6YOBFS.js";
+} from "./chunk-7FJ3PG7I.js";
 import {
   APP_ID,
   ApplicationModule,
@@ -32,6 +32,8 @@ import {
   TestabilityRegistry,
   TracingService,
   ViewEncapsulation,
+  __spreadProps,
+  __spreadValues,
   _global,
   createPlatformFactory,
   inject,
@@ -43,11 +45,7 @@ import {
   ɵɵdefineInjector,
   ɵɵdefineNgModule,
   ɵɵinject
-} from "./chunk-WN3SDDSJ.js";
-import {
-  __spreadProps,
-  __spreadValues
-} from "./chunk-S35MAB2V.js";
+} from "./chunk-XOTSFRSW.js";
 
 // node_modules/@angular/platform-browser/fesm2022/dom_renderer-DGKzginR.mjs
 var EVENT_MANAGER_PLUGINS = new InjectionToken(ngDevMode ? "EventManagerPlugins" : "");
@@ -1228,4 +1226,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-KRF6XD46.js.map
+//# sourceMappingURL=chunk-6OZDZUWS.js.map
